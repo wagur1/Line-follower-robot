@@ -51,7 +51,7 @@ The project is divided into three main layers:
 
 ## 3. MQTT Protocol & Payload Structure
 
-The system utilizes an MQTT Broker to exchange JSON payloads.
+The system utilizes an MQTT Broker to exchange JSON payloads (You have to change the IP Adress in ESP8266 code).
 
 ### 📥 Subscribe: `uet/robot/control`
 The ESP8266 listens to this topic and forwards the JSON string directly to the STM32 via Serial.
