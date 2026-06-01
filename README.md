@@ -55,7 +55,7 @@ The system utilizes an MQTT Broker to exchange JSON payloads.
 
 ### 📥 Subscribe: `uet/robot/control`
 The ESP8266 listens to this topic and forwards the JSON string directly to the STM32 via Serial.
-* **PID Tuning & Base Speed:** `{"Kp":100, "Ki":0, "Kd":100, "Base":180}`
+* **PID Tuning & Base Speed:** `{"Kp":18, "Ki":0, "Kd":10, "Base":230}`
 * **Mode Switching:** `{"mode": 1}` (1: Auto/Line Follow, 0: Manual)
 * **Manual Direction:** `{"dir": "F"}` (Options: `F`orward, `B`ackward, `L`eft, `R`ight, `S`top)
 
